@@ -83,4 +83,11 @@ public class EmployeeDAOimpl implements IemployeeDAO {
 		return flag;
 	}
 
+	@Override
+	public void deleteEmployee(int id) throws Exception
+	{
+		
+		
+	}
+
 }

@@ -26,7 +26,7 @@ public class BootCoreMiniProj7LayeredAppApplication {
 		} catch (Exception e) {
 			e.printStackTrace();
 			System.out.println(e.getMessage());
-		}// hehehe
+		}
 		System.out.println("hellw");
 
 	}
