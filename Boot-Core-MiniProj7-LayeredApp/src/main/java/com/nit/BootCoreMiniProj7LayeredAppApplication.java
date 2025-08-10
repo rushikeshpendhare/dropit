@@ -23,6 +23,10 @@ public class BootCoreMiniProj7LayeredAppApplication {
 			} else {
 				System.out.println("Invalid id");
 			}
+			
+			String resultMsg = service.delEmployee(101);
+			System.out.println(resultMsg);
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 			System.out.println(e.getMessage());

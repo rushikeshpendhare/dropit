@@ -38,4 +38,11 @@ public class EmployeeServiceImpl implements EmployeeService {
 		}
 		return false;
 	}
+
+	@Override
+	public String delEmployee(int id) throws Exception 
+	{
+	    int result = empDao.deleteEmployee(id);	
+		return result==0 ?"Employee not deleted " : "Employee Deleted Succesfully";
+	}
 }

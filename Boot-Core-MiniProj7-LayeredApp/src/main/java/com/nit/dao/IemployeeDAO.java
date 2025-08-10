@@ -13,6 +13,6 @@ public interface IemployeeDAO {
 	public void updateEmployeeSalary(int id, Double salary) throws Exception;
 	
 	
-	public void deleteEmployee(int id) throws Exception;
+	public int deleteEmployee(int id) throws Exception;
 
 }

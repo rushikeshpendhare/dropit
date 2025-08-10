@@ -84,9 +84,21 @@ public class EmployeeDAOimpl implements IemployeeDAO {
 	}
 
 	@Override
-	public void deleteEmployee(int id) throws Exception
+	public int deleteEmployee(int id) throws Exception
 	{
+		int result = 0;
+		try(Connection con = ds.getConnection(); PreparedStatement ps = con.prepareStatement("delete from my_emp where empid = ?"))
+		{
+			ps.setInt(1, id);
+			
+			result = ps.executeUpdate();
+		}
+		catch(Exception e)
+		{
+			throw e;
+		}
 		
+		return result;
 		
 	}
 
