@@ -2,7 +2,7 @@ package com.nit;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.ApplicationContext;
+import org.springframework.context.ConfigurableApplicationContext;
 
 import com.nit.service.EmployeeService;
 import com.nit.service.EmployeeServiceImpl;
@@ -11,7 +11,7 @@ import com.nit.service.EmployeeServiceImpl;
 public class BootCoreMiniProj7LayeredAppApplication {
 
 	public static void main(String[] args) {
-		ApplicationContext ctx = SpringApplication.run(BootCoreMiniProj7LayeredAppApplication.class, args);
+		ConfigurableApplicationContext ctx = SpringApplication.run(BootCoreMiniProj7LayeredAppApplication.class, args);
 		EmployeeService service = ctx.getBean(EmployeeServiceImpl.class);
 
 		try {
