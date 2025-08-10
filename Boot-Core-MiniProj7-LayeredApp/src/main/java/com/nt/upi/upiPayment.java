@@ -8,10 +8,4 @@ public class upiPayment
     	System.out.println("do payment");
     }
 
-public class upiPayment {
-	private void syso() {
-		System.out.println("hiii");
-
-	}
-
 }
